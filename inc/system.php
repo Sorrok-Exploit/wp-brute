@@ -109,18 +109,14 @@ function wpbrute_try_tor($sUser,$sPass) {
 
 function wpbrute_localwarn() {
 	wpbrute_log("Warning: wp-brute running without a proxy. Your identity may be compromised.");
-	print("\n\n\n---WARNING---\n\nWp-Brute is running locally without a proxy and your idendtity is not masked.\nYou have 5 seconds to cancel by pressing CTRL + C.\n\n\n");
-	sleep(5);
-}
-
-public function banner() {
-        print $this->yellow."
- _       __      ____  ____
+	print("\n\n\n--- 
+_       __      ____  ____
 | |     / /___  / __ )/ __/
 | | /| / / __ \/ __  / /_
 | |/ |/ / /_/ / /_/ / __/
 |__/|__/ .___/_____/_/
-      /_/ ".$this->green."Wordpress Brute Force".$this->white.(($this->type == null)?"\nAuthor : N-24@SORROK-EXPLOIT";
+      /_/---\n\nWp-Brute is running locally without a proxy and your idendtity is not masked.\nYou have 5 seconds to cancel by pressing CTRL + C.\n\n\n");
+	sleep(5);
 }
 
 ?>
